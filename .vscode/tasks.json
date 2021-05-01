@@ -1,0 +1,20 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Channels Tutorial Celery Beat",
+            "type": "shell",
+            "command": "/home/aaroncymor/Workspace/Personal/django-channels-tutorial/venv/bin/celery -A channels_tutorial beat -l INFO"
+
+        },
+
+        {
+            "label": "Channels Tutorial Celery Worker",
+            "type": "shell",
+            "command": "/home/aaroncymor/Workspace/Personal/django-channels-tutorial/venv/bin/celery -A channels_tutorial worker -l INFO"
+
+        }
+    ]
+}
